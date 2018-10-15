@@ -1,0 +1,98 @@
+public interface Ballable{
+
+int COUNT = 0; - не может быть абстракт?
+
+public void jump();
+
+public default String getName(){
+
+    return "John";
+}
+
+}
+//////////////////////////////////////////////////////
+
+
+public class Car extends TrafficLight{
+
+    private int countOfSpeeds;
+    private int countOfDoors;
+    private String model;
+
+    protected Car(int countOfSpeeds, double countOfDoors, String model){ --- должно быть this
+    super("");
+    countOfSpeeds = countOfSpeeds;
+    countOfDoors = countOfDoors;
+    model = model;
+    }
+
+    public void drive(){
+        System.out.println("Go...");
+    }
+
+}
+
+//////////////////////////////////////////////////////
+
+
+    class Operator implements Ballable, Runnable { --должен быть метод run
+
+    public static void main(String args){
+
+        System.out.println("Hello world");
+
+    }
+
+    @Override
+    public void jump(){
+        System.out.println(Jumping);
+    }
+
+    }
+
+
+    public class Car{
+
+    public Car(){}
+
+    }
+
+
+//////////////////////////////////////////////////////
+
+interface Runnable{ -- должен быть метод run
+
+private void print(){
+    System.out.println("Print");
+}
+
+}
+
+//////////////////////////////////////////////////////
+
+public class TrafficLight{
+
+private String nameOfStreet;
+
+TrafficLight(String name){  -- не используется параметр
+    numberOfStreet = nameOfStreet;
+}
+
+TrafficLight(){
+}
+
+private String getNameOfStreet(){
+
+return nameOfStreet;
+
+}
+
+private abstract getNumberOfColor(); -- не нужны фигурные скобки
+
+public static void main(String[] args){
+
+TrafficLight trafficLight = new TrafficLight();
+
+}
+
+}

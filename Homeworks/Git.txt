@@ -1,0 +1,6 @@
+1) index, .gitignore
+2) add, add *, add --all
+3) commit, push(with and without pseudonims)
+4) pull
+5) branches: checkout, checkout -b, merge(with kdiff3)
+6) Stashing, show list stashes, save, apply
